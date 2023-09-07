@@ -1,0 +1,3 @@
+package com.kyawlinnthant.navigation
+
+sealed interface BottomBarScreen
