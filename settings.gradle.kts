@@ -18,7 +18,11 @@ dependencyResolutionManagement {
 
 rootProject.name = "GoogleNewsClone"
 include(":app")
-include(":data")
+include(
+    ":data:network",
+    ":data:database",
+    ":data:preferences"
+)
 include(
     ":cores:navigation",
     ":cores:theme"

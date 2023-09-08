@@ -1,4 +1,3 @@
-@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     `kotlin-dsl`
 }
@@ -33,6 +32,18 @@ gradlePlugin {
         register("google.hilt") {
             id = "com.kyawlinnthant.hilt"
             implementationClass = "DaggerHiltPlugin"
+        }
+        register("androidx.room") {
+            id = "com.kyawlinnthant.database.room"
+            implementationClass = "DatabasePlugin"
+        }
+        register("retrofit.network") {
+            id = "com.kyawlinnthant.network.retrofit"
+            implementationClass = "NetworkPlugin"
+        }
+        register("androidx.preferences") {
+            id = "com.kyawlinnthant.datastore.preferences"
+            implementationClass = "DatastorePrefPlugin"
         }
     }
 }
